@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "root_pages",
+  "info": {
+    "singularName": "root-page",
+    "pluralName": "root-pages",
+    "displayName": "Root Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "content_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    },
+    "sub_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-page.sub-page"
+    }
+  }
+}

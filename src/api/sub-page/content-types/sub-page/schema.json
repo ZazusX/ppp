@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_pages",
+  "info": {
+    "singularName": "sub-page",
+    "pluralName": "sub-pages",
+    "displayName": "Sub Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "content_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    },
+    "profile_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::profile-page.profile-page"
+    }
+  }
+}
