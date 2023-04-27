@@ -24,6 +24,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::sub-page.sub-page"
+    },
+    "profile_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::profile-page.profile-page"
     }
   }
 }

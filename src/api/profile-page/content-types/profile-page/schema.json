@@ -56,11 +56,22 @@
       "type": "email"
     },
     "vCard": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
+      ]
+    },
+    "Position": {
+      "type": "enumeration",
+      "enum": [
+        "PARTNER",
+        "ANWÄLTE*",
+        "JURISTISCHE MITARBEITER*INNEN",
+        "OFFICE"
       ],
-      "type": "media",
-      "multiple": false
+      "required": true
     }
   }
 }

@@ -14,16 +14,6 @@
   "attributes": {
     "Title": {
       "type": "string"
-    },
-    "content_pages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::content.content"
-    },
-    "profile_pages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::profile-page.profile-page"
     }
   }
 }
